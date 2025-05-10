@@ -1,17 +1,13 @@
 #!/bin/bash
 
-Boost Setup Tool
-
-Author: MD Sakibur Rahman
-
-Website: https://msrsakibur.netlify.app
-
-GitHub: https://github.com/msrofficial
+# Boost Setup Tool
+# Author: MD Sakibur Rahman
+# Website: https://msrsakibur.netlify.app
+# GitHub: https://github.com/msrofficial
 
 clear
 
-Logo
-
+# Logo
 cat << "EOF"
 
 $$$$$$\                                      
@@ -24,7 +20,6 @@ $$ |   \$$$$$$  |$$ |      \$$$$$$\ \$$$$$$$\
 \__|    \______/ \__|       \_______|\_______|
                                                
                                                
-                                               
  $$$$$$\  $$\                                  
 $$  __$$\ $$ |                                 
 $$ /  \__|$$ | $$$$$$\   $$$$$$\  $$$$$$$\     
@@ -33,8 +28,6 @@ $$ |      $$ |$$$$$$$$ | $$$$$$$ |$$ |  $$ |
 $$ |  $$\ $$ |$$   ____|$$  __$$ |$$ |  $$ |   
 \$$$$$$  |$$ |\$$$$$$$\ \$$$$$$$ |$$ |  $$ |   
  \______/ \__| \_______| \_______|\__|  \__|   
-                                               
-                                               
                                                
              MD Sakibur Rahman
 EOF
@@ -48,11 +41,9 @@ read choice
 
 if [ "$choice" = "1" ]; then
   SCRIPT_PATH="$HOME/boost.sh"
-  cat << 'SCRIPT' > "$SCRIPT_PATH"
+  cat << 'EOF' > "$SCRIPT_PATH"
 #!/system/bin/sh
 
-# Run as root using su
-su -c '
 # Force-stop all non-critical apps
 echo "Force-stopping all non-critical apps..."
 for pkg in $(pm list packages | cut -f2 -d:); do
@@ -86,7 +77,7 @@ for pkg in $(pm list packages | cut -f2 -d:); do
   fi
 done
 echo "Cache cleaning done!"
-SCRIPT
+EOF
 
   chmod +x "$SCRIPT_PATH"
 
@@ -99,10 +90,9 @@ SCRIPT
     SHELL_RC="$HOME/.profile"
   fi
 
-  echo "alias boost='$SCRIPT_PATH'" >> "$SHELL_RC"
-  echo "alias added to $SHELL_RC"
+  echo "alias boost='su -c $SCRIPT_PATH'" >> "$SHELL_RC"
+  echo "Alias added to $SHELL_RC"
   echo "Run 'source $SHELL_RC' or restart Termux to use 'boost' command."
 else
   echo "Setup cancelled."
 fi
-
