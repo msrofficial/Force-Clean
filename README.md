@@ -39,11 +39,11 @@ Follow these steps to set up and use the **Boost Tool**:
 First, clone the repository to your Termux environment:
 
 ```bash
-git clone https://github.com/msrofficial/boost-tool.git
+git clone https://github.com/msrofficial/Force-Clean.git
 ```
 
 ### 2. **Navigate to the directory**:
-    cd boost-tool
+    cd Force-Clean
 
 ### 3. **Run the installation script**:
     bash install.sh
