@@ -45,6 +45,9 @@ git clone https://github.com/msrofficial/Force-Clean.git
 ### 2. **Navigate to the directory**:
     cd Force-Clean
 
-### 3. **Run the installation script**:
-    bash install.sh
+### 3. **Make the bash file executable**:
+       chmod +x install sh
 
+### 4. **Run the installation script**:
+    bash install.sh
+    
