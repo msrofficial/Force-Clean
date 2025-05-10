@@ -1,73 +1,42 @@
-Force Clean
+# Force-Clean Tool
 
-Developed by: MD Sakibur Rahman
+Developed by: [MD Sakibur Rahman](https://github.com/msrofficial)
 
-GitHub: @msrofficial
-Website: msrsakibur.netlify.app
-
+Website: [msrsakibur.netlify.app](https://msrsakibur.netlify.app)
 
 ---
 
-What is the Force-Clean Tool?
+## What is the Force-Clean Tool?
 
-The Boost Tool is a Termux-based utility for rooted Android devices. It automates two key functions to enhance device performance:
+The **Force-Clean Tool** is a Termux-based utility for **rooted Android devices**. It automates two key functions to enhance device performance:
 
-1. Force-stops non-essential apps to free up RAM.
-
-
-2. Cleans cache for all installed apps to free up storage.
-
-
-
+- **Force-stop non-essential apps** to free up RAM.
+- **Clean cache** for all installed apps to free up storage.
 
 ---
 
-Why Use This Tool?
+## Why Use This Tool?
 
-Boosts phone performance by cleaning and stopping apps.
-
-Saves time with an easy-to-use one-word command (boost).
-
-Works on rooted devices, and can be customized for advanced users.
-
-
+- Boosts phone performance by cleaning and stopping apps.
+- Saves time with an easy-to-use one-word command (`boost`).
+- Works on rooted devices and can be customized for advanced users.
 
 ---
 
-How to Set Up?
+## Prerequisites
 
-1. Clone the repository:
-
-git clone https://github.com/msrofficial/Force-Clean.git
-cd boost-tool
-
-
-2. Run the installer:
-
-bash install.sh
-
-
-3. Follow the prompts to set up the boost command in Termux.
-
-
-
+- A **rooted Android device**.
+- **Termux** installed on your device.
 
 ---
 
-How to Use It?
+## How to Clone, Install, and Run the Tool
 
-Once the setup is complete, just type boost in Termux and it will:
+Follow these steps to set up and use the **Boost Tool**:
 
-Force-stop non-essential apps.
+### 1. Clone the Repository
 
-Clean the cache for all apps.
+First, clone the repository to your Termux environment:
 
-
-
----
-
-Author & Credits
-
-MD Sakibur Rahman
-GitHub: @msrofficial
-Website: msrsakibur.netlify.app
+```bash
+git clone https://github.com/msrofficial/boost-tool.git
