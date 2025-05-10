@@ -22,12 +22,13 @@ The **Force-Clean Tool** is a lightweight, Termux-based utility built for **root
 - **One-word command (`boost`)** makes it quick and easy.  
 - Lightweight, fast, and fully open-source.  
 - Customizable for power users with scripting knowledge.
+- 
 ## Screenshots
 
-Here are some screenshots of the tool in action:
-
-![Screenshot 1]((https://files.catbox.moe/lkoky2.png)
-![Screenshot 2](https://files.catbox.moe/fqa5mz.png)
+<p align="center">
+  <img src="https://files.catbox.moe/fqa5mz.png" alt="Screenshot 1" width="45%" style="margin-right: 10px;"/>
+  <img src="https://files.catbox.moe/lkoky2.png" alt="Screenshot 2" width="45%"/>
+</p>
 ---
 
 ## Prerequisites
