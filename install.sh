@@ -51,7 +51,10 @@ if [ "$choice" = "1" ]; then
   cat << 'SCRIPT' > "$SCRIPT_PATH"
 #!/system/bin/sh
 
+# Run as root using su
+su -c '
 # Force-stop all non-critical apps
+echo "Force-stopping all non-critical apps..."
 for pkg in $(pm list packages | cut -f2 -d:); do
   case $pkg in
     com.android.systemui|\
@@ -74,15 +77,15 @@ for pkg in $(pm list packages | cut -f2 -d:); do
 done
 
 # Clean cache for all installed apps
+echo "Cleaning cache for ALL installed apps (user + system)..."
 for pkg in $(pm list packages | cut -f2 -d:); do
   cache_path="/data/data/$pkg/cache"
   if [ -d "$cache_path" ]; then
-    echo "Cleaning: $pkg"
+    echo "Cleaning cache: $pkg"
     rm -rf "$cache_path"/* 2>/dev/null
   fi
 done
-
-echo "All apps cleaned and force-stopped."
+echo "Cache cleaning done!"
 SCRIPT
 
   chmod +x "$SCRIPT_PATH"
