@@ -43,12 +43,8 @@ git clone https://github.com/msrofficial/boost-tool.git
 ```
 
 ### 2. **Navigate to the directory**:
-    ```bash
     cd boost-tool
-    ```
 
 ### 3. **Run the installation script**:
-    ```bash
     bash install.sh
-    ```
 
